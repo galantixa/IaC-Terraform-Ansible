@@ -12,6 +12,11 @@ variable "zone" {
   type = string
 }
 
+variable "credential" {
+  type = string
+  default     = "/path/to/gcp-credentials.json"
+}
+
 variable "vpcs" {
   type = map(object({
     name         = string

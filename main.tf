@@ -11,7 +11,7 @@ provider "google" {
   project = var.project_id
   region  = var.region
   zone    = var.zone
-  credentials = "./meta-sensor-461109-i6-333dff851041.json"
+  credentials = file(var.credential)
 }
 
 # VPC Network
